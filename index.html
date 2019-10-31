@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: green;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.row{
+ background-color: black;
+} 
+
+.column {
+  float: left;
+  padding: 10px;
+ 
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+  color: white;
+}
+
+/* Middle column */
+.column.middle {
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1
+{ 
+ font-size:45;
+ text-align: center;
+  
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+ .header{
+  background-color: orange;
+  line-height: 0.5;
+  padding: 20px;
+  margin: 0;
+  
+}
+
+#left {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  position: relative;
+}
+
+.left{
+ position: absolute;
+ left: 0px;
+ top: 50px;
+ text-align: center;
+}
+
+#right {
+  float: right;
+  width: 50%;
+  padding: 15px;
+  position: relative;
+}
+
+.right{
+ position: absolute;
+ left: 0px;
+ top: 50px;
+ text-align: center;
+ padding-left: 50px;
+}
+
+
+/* Clear floats after the columns */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+.footer{
+  background-color:black;
+  color: white;
+  text-align: center;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <h1 style="text-shadow: 2px 2px 4px white;"> St. Nelson Kids School.</h1>
+  <p style="text-align:center; color: red"><i>Keep pursuing your dreams.</i></p>
+</div>
+ 
+
+ <ul>
+   <li><a class="active" href="#home">DISCOVER</a></li>
+   <li><a href="#news">STUDENT LIFE</a></li>
+   <li><a href="#contact">ADMISSIONS</a></li>
+   <li><a href="#about">GIVE</a></li>
+    <li><a href="#about">CONTACT US</a></li>
+ </ul>
+
+
+<div class="row">
+
+ <div class="column side">
+    <h2 style="text-align:center; color:red";>Good Morning.</h2>
+    <h2 style="text-align:center; color: orange">Welcome to St. Nelson kids School.</h2>
+    <p id="demo"></p>
+    <br>
+    <p style="text-align:center; border-bottom: 2px solid yellow;"> SCHOOLS</p>
+    
+    <p style="text-align:center; color: white; border: 2px solid green; padding: 10px; border-radius: 25px; background-color:green"> Day-care.</p>
+    <p style="text-align:center; color: white; border: 2px solid blue; padding: 10px; border-radius: 25px; background-color: blue"> Kindergarten.</p>
+    <p style="text-align:center; color: white; border: 2px solid indigo; padding: 10px; border-radius: 25px; background-color: indigo"> Lower Elementary.</p>
+    <p style="text-align:center; color: white; border: 2px solid violet; padding: 10px; border-radius: 25px; background-color:violet"> Upper Elementary.</p>
+    
+    <br>
+    <p style="text-align:center; border-bottom: 2px solid yellow;"> OUR MISSION AND VISION</p>
+    <p style="text-align: center"><i>Our vision is to be recognised as delivering world class facilities that support world class teaching and learning</i></p>
+    <p style="text-align: center"><i>Our mission is to develop, maintain and manage the School in a safe, efficient and sustainable manner, ensuring the continued enhancement of our unique physical heritage and the provision of a world class teaching and learning environment.</i></p>
+</div>
+  
+
+<div class="column middle">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/hello.jpg" style="width:100%">
+  <div class="text">Welcome to St. Nelson Kids School</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/sch2.jpg" style="width:100%">
+  <div class="text">where do you see yourself in next 5 years?</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/sch3.jpg" style="width:100%">
+  <div class="text">St. Nelson Kids School</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+</div>
+
+
+<div class="roww">
+  <h2 style="text-align: center">Programs</h2>
+  <p style="margin:auto; width: 50%; border-left: 5px solid red;">St. Nelson Kids School proudly serves students ages 2 through 11 with programs extending into Kindergarden and Elementary School. Our School goes beyond textbook learning with exciting, hands-on field studies and collaborative learning.</p>
+  
+  <div id="left">
+    <img src="images/school3.jpg" alt="Cinque Terre" width="950" height="300">  
+  </div>
+  
+  <div id="right">
+    <img src="images/school4.jpg" alt="Cinque Terre" width="950" height="300">
+  </div>
+  
+</div>
+
+
+
+
+
+
+<div class="footer">
+   <h2>St. Nelson Kids School.</h2>
+   <p>Atlanta, Georgia. USA.</p>
+   <p>(740)744-6088. office@St.nelsonkidsschool.org</p>
+</div>
+
+ 
+</body>
+</html>
+
+</body>
+</html> 
