@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+}
+
+.column1{
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.copy{
+    text-align: center;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
